@@ -1,53 +1,63 @@
-# QR Menu Card Generator 
+# QR Menu Card Generator
 
-This project allows restaurant administrators to digitally generate QR codes for their menu cards instead of using physical menus. The admin can input the restaurant name and Google Drive menu link, and the system will generate a downloadable QR code that can be printed and placed on tables for customers to scan.
+This project allows restaurant administrators to digitally generate QR codes for their menu cards instead of using physical menus. The admin inputs the restaurant name and menu link (e.g., Google Drive), and the system generates a downloadable QR code. This QR code can be printed and placed on tables for customers to scan and view the menu.
 
-This ensures improved user convenience, better hygiene, reduced printing costs, and a modernized dining experience.
+This solution ensures a modern, hygienic, and cost-effective dining experience.
+
 ---
 
 ## Features
 
-- Admin adds:
-  - Restaurant name
-  - Menu link (Google Drive or any online file)
-  ![QR code generator Page](generate_qr_page.png)
+- Admin can enter:
+  - Restaurant Name
+  - Online Menu Link (e.g., Google Drive)
+
 - Instantly generates a QR code
-![Generated QR code Page](qr_result_page.png)
+
 - Option to download and print the QR code
+
 - Clean and responsive interface
 
 ---
 
 ## Tech Stack
 
-- **Backend**: Python, Django
-- **Frontend**: HTML, CSS, JavaScript
-- **QR Code Generator**: `qrcode` Python library and pillow library
-- **UI Styling**: Bootstrap
+- **Backend**: Python, Django  
+- **Frontend**: HTML, CSS 
+- **QR Code Generation**: `qrcode` and `pillow` Python libraries  
+- **Styling**: Bootstrap
 
 ---
 
-## Advantages
+## Benefits
 
-- Enhances user experience and convenience
-- Hygienic and touchless menu access
-- Saves printing costs
-- Simple and effective admin interface
-- Easily updateable (update the drive link anytime)
-
+- Improved customer convenience  
+- Hygienic and touchless menu access  
+- Reduces printing costs  
+- Admin-friendly interface  
+- Easily updateable menu links anytime
 
 ---
 
-## Usage
+## Getting Started
 
 1. Clone the repository
+
 2. Create and activate a virtual environment
+```bash
 python -m venv env
 env\Scripts\activate         # Windows
+```
+
 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
+
 4. Run Django server
+```bash
 python manage.py runserver
+```
 
 
 ---
@@ -60,3 +70,10 @@ python manage.py runserver
 - QR code analytics (how many scans)
 
 - Generate multiple QR codes for multiple branches
+
+---
+
+## Conclusion
+The QR Menu Card Generator streamlines the dining experience by offering a clean, contactless solution for accessing restaurant menus. With its user friendly interface and dynamic QR code generation, this project modernizes menu distribution while ensuring hygiene and operational efficiency.
+
+---
